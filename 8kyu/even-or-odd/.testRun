@@ -23,3 +23,23 @@ Examples
 
 Finished in 0.0005 seconds
 2 examples, 0 failures
+
+
+
+Time: 2143ms Passed: 6 Failed: 0
+Test Results:
+ Testing...
+ Small numbers:
+  ✔ Test Passed
+ Medium numbers...
+  ✔ Test Passed
+ Large numbers
+  ✔ Test Passed
+ Zero...
+  ✔ Test Passed
+ Random Ints
+  ✔ Test Passed
+ Random Integers
+  ✔ Test Passed
+Completed in 0.0055 seconds
+You have passed all of the tests! :)
