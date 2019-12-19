@@ -1,0 +1,25 @@
+
+Examples
+  Evens: 2 0 12
+  Odds: 7 1 23
+
+Finished in 0.0004 seconds
+2 examples, 0 failures
+
+
+
+Examples
+  Evens: 2 0 12 20002
+  Odds: 7 1 23 32849
+
+Finished in 0.0201 seconds
+2 examples, 0 failures
+
+
+
+Examples
+  Evens: 2 0 12 20002
+  Odds: 7 1 23 32849
+
+Finished in 0.0005 seconds
+2 examples, 0 failures
