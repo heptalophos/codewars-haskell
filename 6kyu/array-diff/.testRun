@@ -1,0 +1,24 @@
+
+Time: 2058ms Passed: 3 Failed: 0
+Test Results:
+ difference
+ example with one occurence
+  ✔ Test Passed
+ example with two occurences
+  ✔ Test Passed
+ randomized testing
+  ✔ Test Passed
+Completed in 0.0199 seconds
+  
+  You have passed all of the tests! :)
+
+
+>stack test
+
+difference
+  example with zero occurences
+  example with one occurence
+  example with two occurences
+
+Finished in 0.0008 seconds
+3 examples, 0 failures
