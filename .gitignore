@@ -20,6 +20,7 @@ cabal.sandbox.config
 dist
 dist-*
 *.lock
+cleanup.*
 # sorted default .gitignore 
 # from github/gitignore/Haskell.gitignore
 # © 2019 GitHub, Inc.
