@@ -1,0 +1,22 @@
+name: create-phone-number
+version: 1.0.0.00
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: CreatePhoneNumber
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - quickcheck
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - array-diff
+      - hspec
