@@ -8,8 +8,8 @@ library:
   exposed-modules: CreatePhoneNumber
   source-dirs: src
   ghc-options: -Wall
-  # dependencies:
-  # - quickcheck
+  dependencies:
+  - quickcheck
   # - foo       # List here the packages you
   # - bar       # want to use in your solution.
 
