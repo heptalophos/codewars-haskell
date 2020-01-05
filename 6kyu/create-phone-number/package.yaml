@@ -9,7 +9,7 @@ library:
   source-dirs: src
   ghc-options: -Wall
   dependencies:
-  - quickcheck
+  - QuickCheck
   # - foo       # List here the packages you
   # - bar       # want to use in your solution.
 
@@ -19,4 +19,5 @@ tests:
     source-dirs: test
     dependencies:
       - create-phone-number
+      - QuickCheck
       - hspec
