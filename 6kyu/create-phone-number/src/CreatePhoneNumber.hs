@@ -1,8 +1,11 @@
 module CreatePhoneNumber where
 
 createPhoneNumber :: [Int] -> String
-createPhoneNumber ds = "(" ++ d 0 ++ d 1 ++ d 2 ++ ") " 
-                           ++ d 3 ++ d 4 ++ d 5 ++ "-"  
-                           ++ d 6 ++ d 7 ++ d 8 ++ d 9
+createPhoneNumber digits = "(" ++ area ++ ") " ++ 
+                           exchange ++ "-" ++ subscriber 
     where
-        d = (!!) . map show $ ds
+        area       = digitAt 0 ++ digitAt 1 ++ digitAt 2
+        exchange   = digitAt 3 ++ digitAt 4 ++ digitAt 5
+        subscriber = digitAt 6 ++ digitAt 7 ++ 
+                     digitAt 8 ++ digitAt 9 
+        digitAt = ((!!) . map show) digits
