@@ -1,0 +1,10 @@
+create-phone-number> test (suite: test)
+
+Basic tests
+Random tests
+  +++ OK, passed 100 tests.
+
+Finished in 0.0054 seconds
+2 examples, 0 failures
+
+create-phone-number> Test suite test passed

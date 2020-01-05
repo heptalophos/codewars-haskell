@@ -1,15 +1,15 @@
-name: array-diff
+name: create-phone-number
 version: 0.0.1.00
 
 dependencies:
   - base
 
 library:
-  exposed-modules: Difference
+  exposed-modules: CreatePhoneNumber
   source-dirs: src
   ghc-options: -Wall
-  # dependencies:
-  # - quickcheck
+  dependencies:
+  - QuickCheck
   # - foo       # List here the packages you
   # - bar       # want to use in your solution.
 
@@ -18,5 +18,6 @@ tests:
     main: Tests.hs
     source-dirs: test
     dependencies:
-      - array-diff
+      - create-phone-number
+      - QuickCheck
       - hspec
