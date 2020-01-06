@@ -1,5 +1,5 @@
 name: even-or-odd
-version: 1.0.0.00
+version: 0.0.1.00
 
 dependencies:
   - base
