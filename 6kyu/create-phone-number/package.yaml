@@ -15,7 +15,7 @@ library:
 
 tests:
   test:
-    main: Tests.hs
+    main: Tests
     source-dirs: test
     dependencies:
       - create-phone-number

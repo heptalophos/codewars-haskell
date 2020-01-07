@@ -1,4 +1,4 @@
--- module KataSpec (main) where
+module Tests (main) where
 
 import CreatePhoneNumber
 import Test.QuickCheck

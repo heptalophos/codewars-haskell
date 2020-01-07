@@ -1,22 +1,23 @@
-name: even-or-odd
+name: expressions-matter
 version: 0.0.1.00
 
 dependencies:
   - base
 
 library:
-  exposed-modules: EvenOrOdd
+  exposed-modules: Expression
   source-dirs: src
   ghc-options: -Wall
-  # dependencies:
-  # - quickcheck
+  dependencies:
+  - QuickCheck
   # - foo       # List here the packages you
   # - bar       # want to use in your solution.
 
 tests:
   test:
-    main: Tests.hs
+    main: ExpressionSpec
     source-dirs: test
     dependencies:
-      - even-or-odd
+      - expressions-matter
+      - QuickCheck
       - hspec
