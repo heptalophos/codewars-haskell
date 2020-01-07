@@ -8,15 +8,16 @@ library:
   exposed-modules: Expression
   source-dirs: src
   ghc-options: -Wall
-  # dependencies:
-  # - quickcheck
+  dependencies:
+  - QuickCheck
   # - foo       # List here the packages you
   # - bar       # want to use in your solution.
 
 tests:
   test:
-    main: ExpressionSpec.hs
+    main: ExpressionSpec
     source-dirs: test
     dependencies:
       - expressions-matter
+      - QuickCheck
       - hspec
