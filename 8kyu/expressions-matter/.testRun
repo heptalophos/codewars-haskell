@@ -1,0 +1,11 @@
+expressions-matter> test (suite: test)
+
+finds the max
+  some simple tests
+  handles random tests
+    +++ OK, passed 100 tests.
+
+Finished in 0.0018 seconds
+2 examples, 0 failures
+
+expressions-matter> Test suite test passed
