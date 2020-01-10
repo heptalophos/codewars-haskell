@@ -1,0 +1,22 @@
+name: sum-odd-numbers
+version: 0.0.1.00
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: SumOddNumbers
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - quickcheck
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: SumOddNumbersSpec.hs
+    source-dirs: test
+    dependencies:
+      - sum-odd-numbers
+      - hspec
