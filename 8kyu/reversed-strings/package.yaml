@@ -1,0 +1,23 @@
+name: reversed-strings
+version: 0.0.1.00
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: Solution
+  source-dirs: src
+  ghc-options: -Wall
+  dependencies:
+  - QuickCheck
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: SolutionTest
+    source-dirs: test
+    dependencies:
+      - reversed-strings
+      - QuickCheck
+      - hspec
