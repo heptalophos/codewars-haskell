@@ -1,0 +1,18 @@
+> stack test
+
+Sample tests
+Random tests
+  +++ OK, passed 100 tests.
+
+Finished in 0.0150 seconds
+2 examples, 0 failures
+
+
+> stack test
+
+Sample tests
+Random tests
+  +++ OK, passed 100 tests.
+
+Finished in 0.0156 seconds
+2 examples, 0 failures
