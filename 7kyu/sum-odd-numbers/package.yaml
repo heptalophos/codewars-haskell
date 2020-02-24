@@ -7,16 +7,19 @@ dependencies:
 library:
   exposed-modules: SumOddNumbers
   source-dirs: src
-  ghc-options: -Wall
-  # dependencies:
-  # - quickcheck
+  ghc-options: 
+  - -Wall
+  - -Wtype-defaults
+  dependencies:
+  - QuickCheck
   # - foo       # List here the packages you
   # - bar       # want to use in your solution.
 
 tests:
   test:
-    main: SumOddNumbersSpec.hs
+    main: SumOddNumbersSpec
     source-dirs: test
     dependencies:
       - sum-odd-numbers
+      - QuickCheck
       - hspec
