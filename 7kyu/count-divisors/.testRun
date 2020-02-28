@@ -1,0 +1,15 @@
+
+divisors
+  should return 1 for 1
+  should return 3 for 4
+  should return 2 for 5
+  should return 6 for 12
+  should return 8 for 30
+  should return 3 for 25
+  should work for random inputs (Integer)
+    +++ OK, passed 100 tests.
+  should work for random inputs (Int)
+    +++ OK, passed 100 tests.
+
+Finished in 0.0312 seconds
+8 examples, 0 failures
