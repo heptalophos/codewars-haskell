@@ -1,0 +1,10 @@
+>stack test
+
+FindParityOutlier
+  example tests
+  fixed tests
+  random tests
+    +++ OK, passed 100 tests.
+
+Finished in 0.2425 seconds
+3 examples, 0 failures

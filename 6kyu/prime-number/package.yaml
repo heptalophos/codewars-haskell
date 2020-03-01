@@ -1,0 +1,23 @@
+name: prime-number
+version: 0.0.1.00
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: IsPrime
+  source-dirs: src
+  ghc-options: -Wall -Wtype-defaults
+  # dependencies:
+  # - QuickCheck
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: IsPrimeSpec
+    source-dirs: test
+    dependencies:
+      - prime-number
+      - hspec
+      - QuickCheck
