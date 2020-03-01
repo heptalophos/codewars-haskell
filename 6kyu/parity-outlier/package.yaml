@@ -1,0 +1,23 @@
+name: parity-outlier
+version: 0.0.1.00
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: ParityOutlier
+  source-dirs: src
+  ghc-options: -Wall
+  # dependencies:
+  # - quickcheck
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: ParityOutlierSpec
+    source-dirs: test
+    dependencies:
+      - parity-outlier
+      - hspec
+      - QuickCheck
