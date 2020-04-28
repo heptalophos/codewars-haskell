@@ -1,0 +1,25 @@
+name: roman-numerls
+version: 0.0.1.00
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: RomanNumerals
+  source-dirs: src
+  ghc-options: 
+  - -Wall
+  - -Wtype-defaults
+  dependencies:
+  - QuickCheck
+  # - foo       # List here the packages you
+  # - bar       # want to use in your solution.
+
+tests:
+  test:
+    main: RomanNumeralsTest
+    source-dirs: test
+    dependencies:
+      - sum-odd-numbers
+      - QuickCheck
+      - hspec
