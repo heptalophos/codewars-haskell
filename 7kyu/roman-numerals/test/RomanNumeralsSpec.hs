@@ -1,7 +1,17 @@
 module RomanNumeralsSpec where
 
 import Test.Hspec
+import Test.QuickCheck
 import RomanNumerals (solution)
+
+numerals :: [(String, Integer)]
+numerals = zip ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" ]
+               [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+
+referenceSolution :: Integer -> String
+referenceSolution 0 = ""
+referenceSolution n = k ++ referenceSolution (n - v)
+                      where (k, v) = head $ filter ((<=n).snd) numerals
 
 main = hspec $ do
   describe "Some tests" $ do
@@ -16,3 +26,6 @@ main = hspec $ do
     it "should translate 1000 to M" $ solution 1889 `shouldBe` "MDCCCLXXXIX"
     it "should translate 1889 to MDCCCLXXXIX" $ solution 1889 `shouldBe` "MDCCCLXXXIX"
     it "should translate 1989 to MCMLXXXIX" $ solution 1989 `shouldBe` "MCMLXXXIX"
+  describe "Randomized tests" $ do
+    it "should work for random examples" $ forAll (choose (1,3888)) $
+        \x -> solution (abs x) == referenceSolution (abs x)
