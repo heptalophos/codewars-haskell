@@ -16,7 +16,7 @@ library:
 
 tests:
   test:
-    main: RomanNumeralsTest.hs
+    main: RomanNumeralsSpec
     source-dirs: test
     dependencies:
       - roman-numerals
