@@ -17,3 +17,26 @@ Randomized tests
 
 Finished in 0.0030 seconds
 12 examples, 0 failures
+
+
+
+>stack test
+
+
+Some tests
+  should translate 1 to I
+  should translate 4 to IV
+  should translate 6 to VI
+  should translate 14 to XIV
+  should translate 21 to XXI
+  should translate 89 to LXXXIX
+  should translate 91 to XCI
+  should translate 984 to CMLXXXIV
+  should translate 1000 to M
+  should translate 1889 to MDCCCLXXXIX
+  should translate 1989 to MCMLXXXIX
+Randomized tests
+  should work for random examples
+
+Finished in 0.0010 seconds
+12 examples, 0 failures
